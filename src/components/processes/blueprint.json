@@ -1,0 +1,14 @@
+{
+  "variant": "steps",
+  "eyebrow": "",
+  "title": "",
+  "intro": "",
+  "ctaLabel": "",
+  "sectionSize": "auto",
+  "steps": [
+    { "title": "", "body": "" },
+    { "title": "", "body": "" },
+    { "title": "", "body": "" },
+    { "title": "", "body": "" }
+  ]
+}

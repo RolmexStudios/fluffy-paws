@@ -1,0 +1,26 @@
+{
+  "variant": "teaser",
+  "eyebrow": "",
+  "title": "",
+  "intro": "",
+  "viewAllLabel": "Read the letters",
+  "teaserLimit": 3,
+  "sectionSize": "auto",
+  "posts": [
+    {
+      "slug": "",
+      "date": "",
+      "year": "",
+      "month": "",
+      "title": "",
+      "excerpt": "",
+      "heroImageUrl": "",
+      "heroImageAlt": "",
+      "blocks": [
+        { "type": "paragraph", "text": "" },
+        { "type": "image", "imageUrl": "", "alt": "", "caption": "", "align": "left" },
+        { "type": "paragraph", "text": "" }
+      ]
+    }
+  ]
+}

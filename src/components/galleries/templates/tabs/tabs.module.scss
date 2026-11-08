@@ -1,0 +1,153 @@
+@keyframes categorySwoosh {
+  from {
+    opacity: 0.55;
+    transform: translateX(-30%) scaleX(0.35);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateX(130%) scaleX(1);
+  }
+}
+
+@keyframes categoryEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 1.15rem, 0) scale(0.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+.section {
+  background:
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(196, 92, 62, 0.06), transparent 55%),
+    #faf8f5;
+  padding: 5.5rem 0;
+  scroll-margin-top: 6rem;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 0 1.5rem;
+}
+
+.header {
+  max-width: 40rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c45c3e;
+}
+
+.title {
+  margin-top: 0;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #1c1916;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #5c5348;
+}
+
+.selector {
+  margin-top: 2.25rem;
+}
+
+.expand {
+  display: grid;
+  grid-template-rows: 0fr;
+  margin-top: 0;
+  overflow: hidden;
+  transition:
+    grid-template-rows 0.72s cubic-bezier(0.22, 1, 0.36, 1),
+    margin-top 0.72s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.expand[data-open="true"] {
+  grid-template-rows: 1fr;
+  margin-top: 0.85rem;
+}
+
+.expandInner {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.categoryPane {
+  position: relative;
+  min-height: 0;
+  overflow: hidden;
+  transform-origin: top center;
+  animation: categoryEnter 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.08s both;
+}
+
+.swoosh {
+  position: absolute;
+  top: 0.5rem;
+  left: -8%;
+  z-index: 2;
+  width: 42%;
+  height: min(18rem, 42vh);
+  pointer-events: none;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 92, 62, 0.18),
+    rgba(250, 248, 245, 0.55),
+    transparent
+  );
+  filter: blur(8px);
+  animation: categorySwoosh 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.25rem 0;
+    scroll-margin-top: 8rem;
+  }
+
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .selector {
+    margin-top: 1.5rem;
+  }
+
+  .tabsAnchor {
+    scroll-margin-top: 6.5rem;
+  }
+
+  .swoosh {
+    height: 12rem;
+  }
+
+  .categoryPane {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .expand,
+  .categoryPane,
+  .swoosh {
+    animation: none;
+    transition: none;
+  }
+}

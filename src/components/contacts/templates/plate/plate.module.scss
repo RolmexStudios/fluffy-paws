@@ -1,0 +1,141 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--block, 4rem) var(--gutter, 1.5rem);
+  background: var(--color-bg, #f4f0e8);
+  color: var(--color-fg, #1a1917);
+}
+
+.media {
+  position: relative;
+  width: 100%;
+  max-width: var(--page-max, 90rem);
+  margin-inline: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.sectionBand {
+  padding-block: clamp(1.25rem, 3vh, 2.25rem);
+}
+
+.band {
+  aspect-ratio: auto;
+  min-height: clamp(15rem, 26vh, 20rem);
+}
+
+.video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: color-mix(in srgb, var(--charcoal, #141413) 42%, transparent);
+  pointer-events: none;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--gutter, 1.5rem);
+  text-align: center;
+  color: #fff;
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: clamp(3rem, 6vw, 4.5rem);
+  height: auto;
+  max-height: 4.5rem;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.label {
+  font-family: var(--font-meta), Inter, Helvetica, Arial, sans-serif;
+  font-size: var(--text-meta, 0.75rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta, 0.12em);
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.lead {
+  margin: 0 auto;
+  max-width: 40rem;
+  font-size: clamp(1.5rem, 3.5vw, 2.75rem);
+  line-height: 1.15;
+  letter-spacing: var(--tracking-tight, -0.02em);
+}
+
+.button {
+  margin-top: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.9em 2em;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  font-family: var(--font-meta), Inter, Helvetica, Arial, sans-serif;
+  font-size: var(--text-meta, 0.75rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta, 0.12em);
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.45s var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.button:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .media {
+    aspect-ratio: unset;
+    min-height: clamp(22rem, 78vw, 30rem);
+  }
+
+  .logo {
+    width: 2.75rem;
+    max-height: 3.25rem;
+  }
+
+  .lead {
+    font-size: clamp(1.125rem, 4.5vw, 1.45rem);
+  }
+
+  .band {
+    min-height: 14.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}

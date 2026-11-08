@@ -1,0 +1,11 @@
+{
+  "variant": "stats",
+  "eyebrow": "",
+  "sectionSize": "auto",
+  "items": [
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" },
+    { "label": "", "value": "" }
+  ]
+}

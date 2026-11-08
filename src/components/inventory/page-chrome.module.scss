@@ -1,0 +1,166 @@
+.root {
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  background: #f6f2ec;
+  color: #1c1916;
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(246, 242, 236, 0.9);
+  border-bottom: 1px solid rgba(28, 25, 22, 0.12);
+  backdrop-filter: blur(8px);
+}
+
+.barInner {
+  margin: 0 auto;
+  max-width: 84rem;
+  padding: 1.1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.wordmark {
+  font-family: var(--font-editorial-serif), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.3rem;
+  letter-spacing: -0.01em;
+  color: #1c1916;
+  text-decoration: none;
+}
+
+.logoImage {
+  display: block;
+  height: 1.5rem;
+  width: auto;
+  max-width: min(50vw, 11rem);
+  object-fit: contain;
+  filter: brightness(0);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+
+  a {
+    font-family: var(--font-editorial-sans), system-ui, sans-serif;
+    font-size: 0.74rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #4a433b;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: #1c1916;
+    }
+  }
+}
+
+.inquire {
+  color: #6b4ea8 !important;
+}
+
+.statusBanner {
+  margin: 0;
+  padding: 0.45rem 1.1rem;
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #f6f2ec;
+  background: #1c1916;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.footer {
+  border-top: 1px solid rgba(28, 25, 22, 0.12);
+  background: #1c1916;
+  color: #f3ede3;
+}
+
+.footerInner {
+  margin: 0 auto;
+  max-width: 84rem;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.colophon {
+  font-family: var(--font-editorial-serif), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+.footerBack {
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #d8cebf;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+
+  &:hover {
+    color: #fffdf9;
+  }
+}
+
+@media (max-width: 767px) {
+  .barInner {
+    padding: 0.75rem 1.1rem;
+    gap: 0.35rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .links {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 0.9rem;
+  }
+
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+  }
+
+  .links a.homeLink {
+    display: none;
+  }
+
+  .wordmark {
+    font-size: 1.1rem;
+  }
+
+  .statusBanner {
+    padding: 0.5rem 1.1rem;
+    letter-spacing: 0.22em;
+  }
+
+  .footerInner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem 1.1rem;
+  }
+}

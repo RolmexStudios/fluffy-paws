@@ -1,0 +1,156 @@
+{
+  "variant": "showroom",
+  "eyebrow": "",
+  "title": "The showroom",
+  "intro": "A quiet register of the cars currently under our care. Each is offered privately, with full history and inspection on appointment.",
+  "teaserLimit": 3,
+  "viewAllLabel": "",
+  "sectionSize": "auto",
+  "vehicles": [
+    {
+      "id": "porsche-911-carrera-rs-1973",
+      "slug": "1973-porsche-911-carrera-rs-2-7",
+      "year": "1973",
+      "make": "Porsche",
+      "model": "911 Carrera RS 2.7 Touring",
+      "chassis": "9113600XYZ",
+      "transmission": "Manual",
+      "status": "available",
+      "price": "€1,250,000",
+      "metricLabel": "Output",
+      "metricValue": "210 PS",
+      "imageUrl": "/assets/editorial-cars/porsche-rs.jpg",
+      "imageAlt": "1973 Porsche 911 Carrera RS 2.7 in profile",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/gallery/porsche-1.jpg",
+        "/assets/editorial-cars/gallery/porsche-2.jpg",
+        "/assets/editorial-cars/porsche-rs.jpg"
+      ],
+      "provenance": [
+        { "year": "1973", "label": "Delivered new to Stuttgart, Fjord Green over black" },
+        { "year": "1989", "label": "Single ownership, Lombardy, two decades" },
+        { "year": "2021", "label": "Bare-shell restoration, matching numbers retained" }
+      ]
+    },
+    {
+      "id": "aston-martin-db5-1965",
+      "slug": "1965-aston-martin-db5",
+      "year": "1965",
+      "make": "Aston Martin",
+      "model": "DB5 Saloon",
+      "chassis": "DB5/1486/R",
+      "transmission": "Manual",
+      "status": "private",
+      "price": "Reserved",
+      "metricLabel": "Coachwork",
+      "metricValue": "Superleggera",
+      "imageUrl": "/assets/editorial-cars/aston-db5.jpg",
+      "imageAlt": "1965 Aston Martin DB5 in Silver Birch",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/aston-db5.jpg",
+        "/assets/editorial-cars/hero.jpg",
+        "/assets/editorial-cars/about.jpg"
+      ],
+      "provenance": [
+        { "year": "1965", "label": "Silver Birch over Connolly red, UK supply" },
+        { "year": "2008", "label": "Marque concours class win, restored by specialists" }
+      ]
+    },
+    {
+      "id": "ferrari-f40-1991",
+      "slug": "1991-ferrari-f40",
+      "year": "1991",
+      "make": "Ferrari",
+      "model": "F40",
+      "chassis": "ZFFGJ34B000089XYZ",
+      "transmission": "Manual",
+      "status": "incoming",
+      "price": "€2,850,000",
+      "metricLabel": "Output",
+      "metricValue": "478 PS",
+      "imageUrl": "/assets/editorial-cars/ferrari-f40.jpg",
+      "imageAlt": "1991 Ferrari F40 three-quarter rear",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/gallery/ferrari-1.jpg",
+        "/assets/editorial-cars/gallery/ferrari-2.jpg",
+        "/assets/editorial-cars/ferrari-f40.jpg"
+      ],
+      "provenance": [
+        { "year": "1991", "label": "Non-cat, non-adjust, European specification" },
+        { "year": "2016", "label": "Classiche certified, full tool kit and literature" }
+      ]
+    },
+    {
+      "id": "bmw-m3-e30-evolution-1988",
+      "slug": "1988-bmw-m3-e30-evolution",
+      "year": "1988",
+      "make": "BMW",
+      "model": "M3 E30 Evolution II",
+      "chassis": "WBAAK0708J2XXXXX",
+      "transmission": "Manual",
+      "status": "available",
+      "price": "€245,000",
+      "metricLabel": "Build",
+      "metricValue": "1 of 500",
+      "imageUrl": "/assets/editorial-cars/bmw-m3-e30.jpg",
+      "imageAlt": "1988 BMW M3 E30 Evolution II front three-quarter",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/bmw-m3-e30.jpg",
+        "/assets/editorial-cars/about.jpg",
+        "/assets/editorial-cars/hero.jpg"
+      ],
+      "provenance": [
+        { "year": "1988", "label": "Nogaro Silver, homologation special" },
+        { "year": "2019", "label": "Recommissioned, period-correct throughout" }
+      ]
+    },
+    {
+      "id": "mercedes-280se-3-5-cabriolet-1971",
+      "slug": "1971-mercedes-benz-280-se-3-5-cabriolet",
+      "year": "1971",
+      "make": "Mercedes-Benz",
+      "model": "280 SE 3.5 Cabriolet",
+      "chassis": "111.027.XXXXXX",
+      "transmission": "Automatic",
+      "status": "available",
+      "price": "€375,000",
+      "metricLabel": "Coachwork",
+      "metricValue": "W111 Cabriolet",
+      "imageUrl": "/assets/editorial-cars/mercedes-280se.jpg",
+      "imageAlt": "1971 Mercedes-Benz 280 SE 3.5 Cabriolet with top down",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/mercedes-280se.jpg",
+        "/assets/editorial-cars/about.jpg",
+        "/assets/editorial-cars/hero.jpg"
+      ],
+      "provenance": [
+        { "year": "1971", "label": "US delivery, converted to European specification" },
+        { "year": "2014", "label": "Rotisserie restoration, DB180 Silver over red" }
+      ]
+    },
+    {
+      "id": "jaguar-e-type-series-1-1967",
+      "slug": "1967-jaguar-e-type-series-1-4-2",
+      "year": "1967",
+      "make": "Jaguar",
+      "model": "E-Type Series 1 4.2 Roadster",
+      "chassis": "1E15XXX",
+      "transmission": "Manual",
+      "status": "incoming",
+      "price": "€285,000",
+      "metricLabel": "Body",
+      "metricValue": "Covered headlamp",
+      "imageUrl": "/assets/editorial-cars/jaguar-etype.jpg",
+      "imageAlt": "1967 Jaguar E-Type Series 1 roadster in Opalescent Dark Blue",
+      "galleryImageUrls": [
+        "/assets/editorial-cars/jaguar-etype.jpg",
+        "/assets/editorial-cars/about.jpg",
+        "/assets/editorial-cars/hero.jpg"
+      ],
+      "provenance": [
+        { "year": "1967", "label": "Opalescent Dark Blue over grey, home-market car" },
+        { "year": "2018", "label": "Marque-specialist restoration, numbers matching" }
+      ]
+    }
+  ]
+}

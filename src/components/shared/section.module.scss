@@ -1,0 +1,76 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+}
+
+.body > :global(*) {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+}
+
+.root[data-section-fill="true"] .body > :global(*) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.root[data-section-fill="true"] .body :global(section),
+.root[data-section-fill="true"] .body :global(footer) {
+  flex: 1 0 auto;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.split > :global(*) {
+  min-height: 0;
+}
+
+.root[data-size="full"] {
+  min-height: 100dvh;
+}
+
+.root[data-size="peek"] {
+  min-height: 88dvh;
+}
+
+.root[data-size="tall"] {
+  min-height: 72dvh;
+}
+
+.root[data-size="half"] {
+  min-height: 50dvh;
+}
+
+.root[data-layout="split"] > .body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  .root[data-size="full"] {
+    min-height: 100dvh;
+  }
+
+  .root[data-size="peek"] {
+    min-height: 56dvh;
+  }
+
+  .root[data-size="tall"] {
+    min-height: 70dvh;
+  }
+
+  .root[data-layout="split"] > .body {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,43 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  min-height: 100%;
+}
+
+/* Stay in normal flow. The fill rules above stretch a footer to the plate. */
+.root.compact {
+  display: block;
+  flex: none;
+  min-height: 0;
+}
+
+.root.compact:not(.isRevealed),
+.isPending:not(.isRevealed) {
+  opacity: 0;
+  transform: translate3d(0, 1.75rem, 0);
+}
+
+.isRevealed {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.root.compact,
+.isPending.isRevealed {
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .root,
+  .isPending:not(.isRevealed),
+  .isRevealed {
+    transition: none;
+    transform: none;
+    opacity: 1;
+  }
+}

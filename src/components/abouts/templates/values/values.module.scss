@@ -1,0 +1,154 @@
+.section {
+  background: #1c1916;
+  padding: 5.75rem 0;
+  scroll-margin-top: 6rem;
+  color: #faf8f5;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 0 1.5rem;
+}
+
+.header {
+  max-width: 40rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #e8c4b8;
+}
+
+.title {
+  margin-top: 0.9rem;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(2.4rem, 5.5vw, 3.85rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+
+.lede {
+  margin-top: 1.25rem;
+}
+
+.paragraph {
+  margin-top: 0.9rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: rgba(250, 248, 245, 0.72);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  min-height: 14.5rem;
+  padding: 1.75rem 1.6rem 1.6rem;
+  border: 1px solid rgba(250, 248, 245, 0.1);
+  border-radius: 1.4rem;
+  background: rgba(250, 248, 245, 0.04);
+  transition:
+    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.45s ease,
+    border-color 0.45s ease;
+}
+
+.card[data-featured="true"] {
+  background: rgba(196, 92, 62, 0.18);
+  border-color: rgba(232, 196, 184, 0.28);
+}
+
+.watermark {
+  position: absolute;
+  right: 0.85rem;
+  top: 0.35rem;
+  font-family: var(--font-serif), serif;
+  font-size: 4.5rem;
+  line-height: 1;
+  letter-spacing: -0.06em;
+  color: rgba(250, 248, 245, 0.08);
+  pointer-events: none;
+}
+
+.cardTitle {
+  position: relative;
+  max-width: 16rem;
+  font-family: var(--font-serif), serif;
+  font-size: 1.65rem;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.cardBody {
+  position: relative;
+  margin-top: 0.85rem;
+  max-width: 22rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: rgba(250, 248, 245, 0.7);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-0.25rem);
+    background: rgba(250, 248, 245, 0.08);
+    border-color: rgba(250, 248, 245, 0.18);
+  }
+
+  .card[data-featured="true"]:hover {
+    background: rgba(196, 92, 62, 0.26);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.25rem 0;
+  }
+
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+  }
+
+  .card {
+    min-height: 8.5rem;
+    padding: 1.25rem 1.15rem 1.2rem;
+  }
+
+  .watermark {
+    font-size: 3.25rem;
+  }
+
+  .cardTitle {
+    font-size: 1.4rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

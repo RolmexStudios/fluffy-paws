@@ -1,0 +1,14 @@
+{
+  "variant": "widget",
+  "eyebrow": "",
+  "title": "Schedule a visit",
+  "description": "",
+  "calLink": "",
+  "origin": "https://app.cal.com",
+  "theme": "light",
+  "brandColor": "#c45c3e",
+  "hideEventTypeDetails": true,
+  "hideBranding": false,
+  "layout": "month_view",
+  "sectionSize": "auto"
+}

@@ -1,0 +1,64 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.reveal {
+  width: 100%;
+}
+
+.section {
+  background:
+    radial-gradient(ellipse 70% 50% at 100% 0%, rgba(196, 92, 62, 0.06), transparent 55%),
+    #faf8f5;
+  padding: 5.5rem 0;
+  scroll-margin-top: 6rem;
+}
+
+.stack > :nth-child(even) .section {
+  background:
+    radial-gradient(ellipse 60% 45% at 0% 100%, rgba(196, 92, 62, 0.05), transparent 50%),
+    #f3efe8;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 0 1.5rem;
+}
+
+.header {
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
+}
+
+.title {
+  font-family: var(--font-serif), serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #1c1916;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #5c5348;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.25rem 0;
+    scroll-margin-top: 8rem;
+  }
+
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .header {
+    margin-bottom: 1.25rem;
+  }
+}

@@ -1,0 +1,211 @@
+.root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #6b625a;
+}
+
+.trigger {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.3rem 0 0.5rem;
+  font: inherit;
+  color: #1c1916;
+  text-align: left;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(28, 25, 22, 0.18);
+  border-radius: 0;
+  cursor: pointer;
+  transition:
+    border-color 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    border-bottom-width 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &:hover {
+    border-bottom-color: rgba(28, 25, 22, 0.55);
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-bottom-width: 2px;
+    border-bottom-color: #6b4ea8;
+  }
+}
+
+.root[data-open] .trigger,
+.root[data-active] .trigger {
+  border-bottom-color: #1c1916;
+}
+
+.root[data-open] .trigger {
+  color: #6b4ea8;
+  border-bottom-color: #6b4ea8;
+}
+
+.value {
+  min-width: 0;
+  font-family: var(--font-editorial-serif), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.18rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.mark {
+  position: relative;
+  flex: 0 0 0.7rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  align-self: center;
+  color: inherit;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  &::before {
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 1.5px;
+    transform: translateY(-50%);
+  }
+
+  &::after {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1.5px;
+    transform: translateX(-50%);
+  }
+}
+
+.root[data-open] .mark::after {
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.menu {
+  margin: 0;
+  padding: 0.2rem 0 0.35rem 0.75rem;
+  list-style: none;
+  border-left: 1px solid rgba(28, 25, 22, 0.16);
+  transform-origin: top left;
+  animation: unfold 0.34s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.option {
+  display: grid;
+  grid-template-columns: 1.45rem minmax(0, 1fr) 0.7rem;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 44px;
+  padding: 0.2rem 0.15rem 0.2rem 0.15rem;
+  cursor: pointer;
+  color: #4a433b;
+  transition: color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &[data-active] {
+    color: #1c1916;
+  }
+
+  &[data-selected] {
+    color: #1c1916;
+  }
+}
+
+.index {
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a7f73;
+}
+
+.optionLabel {
+  min-width: 0;
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.option[data-selected] .optionLabel {
+  font-family: var(--font-editorial-serif), sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 1.02rem;
+  letter-spacing: -0.02em;
+}
+
+.pip {
+  width: 0.38rem;
+  height: 0.38rem;
+  justify-self: end;
+  border: 1px solid rgba(28, 25, 22, 0.28);
+  background: transparent;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition:
+    opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.option[data-selected] .pip,
+.option[data-active] .pip {
+  opacity: 1;
+}
+
+.option[data-selected] .pip {
+  background: #6b4ea8;
+  border-color: #6b4ea8;
+}
+
+@media (max-width: 767px) {
+  .value {
+    font-size: 1.12rem;
+  }
+}
+
+@keyframes unfold {
+  from {
+    opacity: 0;
+    transform: translateY(-0.35rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trigger,
+  .mark::before,
+  .mark::after,
+  .option,
+  .pip {
+    transition: none;
+  }
+
+  .menu {
+    animation: none;
+  }
+}

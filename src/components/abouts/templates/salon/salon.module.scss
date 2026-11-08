@@ -1,0 +1,173 @@
+.section {
+  --salon-pad: clamp(0.85rem, 2vh, 1.4rem);
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  height: 50dvh;
+  padding: var(--salon-pad) 0;
+  background: #faf8f4;
+  color: #1a1917;
+  scroll-margin-top: 5.5rem;
+  overflow: hidden;
+}
+
+.frame {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 3.25rem);
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 var(--gutter, 1.5rem);
+}
+
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+  max-width: 26rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #6b6560;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.7rem, 1.1rem + 1.4vw, 2.45rem);
+  font-weight: 500;
+  letter-spacing: -0.034em;
+  line-height: 1.08;
+}
+
+.rule {
+  display: block;
+  width: 2rem;
+  height: 1px;
+  margin: 0.85rem 0 0.8rem;
+  background: #cfc8bc;
+}
+
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  max-width: 36ch;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: -0.011em;
+  line-height: 1.5;
+  color: #3f3c38;
+}
+
+.figure {
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+
+.plate {
+  height: 100%;
+  margin: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: calc(50dvh - (2 * var(--salon-pad)));
+  object-fit: cover;
+  object-position: center 30%;
+  background: #efece7;
+}
+
+@media (min-width: 768px) {
+  .frame[data-image="left"] {
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  }
+
+  .frame[data-image="left"] .figure {
+    order: -1;
+  }
+
+  .frame[data-image="left"] .copy {
+    justify-self: end;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    --salon-pad: 0.85rem;
+    height: 50svh;
+  }
+
+  .frame {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(0, 1fr) auto;
+    align-items: stretch;
+    gap: 0.7rem;
+    padding: 0 1.25rem;
+  }
+
+  .figure {
+    order: -1;
+    overflow: hidden;
+  }
+
+  .copy {
+    max-width: none;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.3rem;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .rule {
+    margin: 0.45rem 0;
+  }
+
+  .prose {
+    gap: 0.35rem;
+  }
+
+  .paragraph {
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+
+  .image {
+    height: 100%;
+    object-position: center 28%;
+  }
+}
+
+@media (max-height: 700px) and (min-width: 768px) {
+  .title {
+    font-size: 1.65rem;
+  }
+
+  .paragraph {
+    font-size: 0.875rem;
+  }
+
+  .rule {
+    margin: 0.55rem 0;
+  }
+}

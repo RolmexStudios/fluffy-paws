@@ -1,0 +1,106 @@
+.header {
+  position: fixed;
+  inset-inline: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem var(--gutter, 1.5rem);
+  color: var(--offwhite, #efeae2);
+  background: linear-gradient(
+    to bottom,
+    color-mix(in srgb, var(--charcoal, #141413) 35%, transparent),
+    transparent
+  );
+  pointer-events: none;
+  transition:
+    color 0.45s var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)),
+    background 0.45s var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+:global(html[data-nav="on-light"]) .header {
+  color: var(--ink, #1a1917);
+  background: none;
+}
+
+.brand,
+.nav,
+.link {
+  pointer-events: auto;
+}
+
+.brand,
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-family: var(--font-meta), Inter, Helvetica, Arial, sans-serif;
+  font-size: var(--text-meta, 0.75rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta, 0.12em);
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.45s var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+}
+
+.brand:hover,
+.link:hover {
+  opacity: 0.65;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 2rem;
+}
+
+.brand:focus-visible,
+.link:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 0.25em;
+}
+
+:global(html[data-banner="merge"]) .header {
+  background: none;
+  color: var(--offwhite, #efeae2);
+}
+
+:global(html[data-banner="dock"]) .header {
+  background: none;
+  color: var(--ink, #1a1917);
+}
+
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding-block: 0.75rem;
+  }
+
+  :global(html[data-banner="dock"]) .header,
+  :global(html[data-banner="merge"]) .header {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding-inline: 1.25rem;
+  }
+
+  .nav {
+    justify-content: center;
+    gap: 0.25rem 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header,
+  .brand,
+  .link {
+    transition: none;
+  }
+}

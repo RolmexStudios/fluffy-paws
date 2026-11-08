@@ -1,0 +1,15 @@
+{
+  "variant": "split",
+  "eyebrow": "",
+  "headline": "",
+  "subheadline": "",
+  "ctaLabel": "View Our Work",
+  "sectionSize": "full",
+  "slideshowIntervalMs": 5000,
+  "slideshowImages": [
+    { "imageUrl": "", "alt": "" },
+    { "imageUrl": "", "alt": "" },
+    { "imageUrl": "", "alt": "" },
+    { "imageUrl": "", "alt": "" }
+  ]
+}

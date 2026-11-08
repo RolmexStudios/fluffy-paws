@@ -1,0 +1,181 @@
+.essay {
+  background: var(--bone, #faf8f4);
+  color: var(--ink, #1a1917);
+}
+
+.hero {
+  padding: calc(var(--block, 4rem) + 1.5rem) var(--gutter, 1.5rem) 3rem;
+}
+
+.frame {
+  position: relative;
+  max-width: 56rem;
+  margin-inline: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.video,
+.iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+  display: block;
+}
+
+.play {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  min-height: 44px;
+  padding: 0.7em 1.4em;
+  border: 0;
+  border-radius: 999px;
+  font-family: var(--font-meta), Inter, Helvetica, Arial, sans-serif;
+  font-size: var(--text-meta, 0.75rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta, 0.12em);
+  text-transform: uppercase;
+  color: var(--ink, #1a1917);
+  background: color-mix(in srgb, var(--bone, #faf8f4) 88%, transparent);
+  cursor: pointer;
+}
+
+.playIcon {
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.intro {
+  max-width: 56rem;
+  margin-inline: auto;
+  padding: 0 var(--gutter, 1.5rem) 3rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: var(--text-lead, 1.125rem);
+  line-height: 1.15;
+  letter-spacing: var(--tracking-tight, -0.02em);
+  max-width: 42rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+  gap: 0.25rem 1.5rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+
+.meta {
+  font-family: var(--font-meta), Inter, Helvetica, Arial, sans-serif;
+  font-size: var(--text-meta, 0.75rem);
+  font-weight: 500;
+  letter-spacing: var(--tracking-meta, 0.12em);
+  text-transform: uppercase;
+  color: var(--ink-muted, #6b6560);
+}
+
+.value {
+  font-size: var(--text-meta, 0.75rem);
+  line-height: 1.35;
+}
+
+.storySection {
+  padding: 0 var(--gutter, 1.5rem) var(--block, 4rem);
+}
+
+.story {
+  max-width: 44rem;
+  margin-inline: auto;
+  display: flow-root;
+  font-size: var(--text-body, 1rem);
+  line-height: 1.75;
+}
+
+.story p {
+  margin-bottom: 2rem;
+}
+
+.float,
+.wide {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-light, #ebe6dc);
+}
+
+.float {
+  width: 45%;
+  margin-bottom: 1.5rem;
+}
+
+.left {
+  float: left;
+  margin-right: 2rem;
+}
+
+.right {
+  float: right;
+  margin-left: 2rem;
+}
+
+.vertical {
+  aspect-ratio: 9 / 16;
+}
+
+.portrait {
+  aspect-ratio: 4 / 5;
+}
+
+.square {
+  aspect-ratio: 1 / 1;
+}
+
+.wide {
+  clear: both;
+  width: 100%;
+  margin: 3rem 0;
+  aspect-ratio: 16 / 9;
+}
+
+.float img,
+.float video,
+.wide img,
+.wide video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .left {
+    margin-right: 1rem;
+  }
+
+  .right {
+    margin-left: 1rem;
+  }
+}

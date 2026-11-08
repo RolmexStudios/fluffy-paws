@@ -1,0 +1,198 @@
+$ease: cubic-bezier(0.22, 1, 0.36, 1);
+$gutter: var(--gutter, 1.5rem);
+
+.section {
+  background: #fff;
+  color: #1a1a1a;
+  padding: 1.25rem 0 4.5rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.heading {
+  padding: 0 $gutter 1.75rem;
+}
+
+.eyebrow {
+  display: none;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #111;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  padding: 0 $gutter;
+}
+
+.cell {
+  min-width: 0;
+}
+
+.tile {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  text-decoration: none;
+  background: #1a1917;
+
+  &:focus-visible {
+    outline: 1px solid #111;
+    outline-offset: 4px;
+  }
+}
+
+.plate {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+
+.image,
+.placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.placeholder {
+  background: linear-gradient(160deg, #efe8de, #d8cfc3);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 19, 18, 0.42);
+  pointer-events: none;
+  transition: background 0.55s $ease;
+}
+
+.tile:hover .overlay,
+.tile:focus-visible .overlay {
+  background: rgba(20, 19, 18, 0.55);
+}
+
+.image {
+  transform: scale(1.01);
+  transition: transform 0.7s $ease;
+}
+
+.tile:hover .image,
+.tile:focus-visible .image {
+  transform: scale(1.06);
+}
+
+.copy {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+}
+
+.name {
+  font-size: clamp(1.65rem, 1.1rem + 1.6vw, 2.35rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+}
+
+.kicker {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  margin-top: 0.55rem;
+  padding: 0 1.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #fff;
+  transition:
+    background 0.45s $ease,
+    color 0.45s $ease,
+    border-color 0.45s $ease;
+}
+
+.tile:hover .cta,
+.tile:focus-visible .cta {
+  background: #fff;
+  border-color: #fff;
+  color: #111;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 0.75rem 0 3.25rem;
+  }
+
+  .heading {
+    padding: 0 1.25rem 1.35rem;
+  }
+
+  .grid {
+    gap: 0.55rem;
+    padding: 0 1.25rem;
+  }
+
+  .plate {
+    aspect-ratio: 4 / 5;
+  }
+
+  .copy {
+    padding: 1.1rem 0.85rem;
+    gap: 0.3rem;
+  }
+
+  .name {
+    font-size: 1.35rem;
+  }
+
+  .cta {
+    min-height: 40px;
+    margin-top: 0.35rem;
+    padding: 0 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay,
+  .image,
+  .cta {
+    transition: none;
+  }
+
+  .tile:hover .image,
+  .tile:focus-visible .image {
+    transform: none;
+  }
+}

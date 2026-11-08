@@ -1,0 +1,128 @@
+.section {
+  background:
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(196, 92, 62, 0.06), transparent 55%),
+    #fff;
+  padding: 5.5rem 0;
+  scroll-margin-top: 6rem;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 0 1.5rem;
+}
+
+.header {
+  max-width: 40rem;
+}
+
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #c45c3e;
+}
+
+.title {
+  margin-top: 0.75rem;
+  font-family: var(--font-serif), serif;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #1c1916;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: #5c5348;
+}
+
+.widget {
+  margin-top: 2.25rem;
+  min-height: 40rem;
+  overflow: auto;
+  border-radius: 1.15rem;
+  background: #fff;
+}
+
+.mount {
+  width: 100%;
+  min-height: 40rem;
+  overflow: auto;
+
+  :global(cal-inline),
+  :global(iframe.cal-embed) {
+    width: 100%;
+    min-height: 40rem;
+  }
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  min-height: 16rem;
+  margin-top: 2.25rem;
+  border: 2px dashed rgba(196, 92, 62, 0.45);
+  border-radius: 1.15rem;
+  background: #f0ebe3;
+  text-align: center;
+}
+
+.placeholderId {
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1c1916;
+}
+
+.placeholderPath {
+  max-width: 90%;
+  overflow: hidden;
+  font-family: ui-monospace, monospace;
+  font-size: 0.7rem;
+  color: #5c5348;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding: 3.25rem 0;
+    scroll-margin-top: 8rem;
+  }
+
+  .inner {
+    padding: 0 1rem;
+  }
+
+  .widget,
+  .mount,
+  .placeholder {
+    margin-top: 1.5rem;
+    min-height: 28rem;
+  }
+
+  .mount {
+    :global(cal-inline),
+    :global(iframe.cal-embed) {
+      min-height: 28rem;
+    }
+  }
+
+  .placeholder {
+    min-height: 12rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .widget,
+  .mount {
+    scroll-behavior: auto;
+  }
+}

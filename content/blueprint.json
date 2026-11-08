@@ -1,0 +1,303 @@
+{
+  "BrochureSiteNav_1": {
+    "component": "BrochureSiteNav",
+    "variant": "bar",
+    "businessName": "Bubbles Dog Grooming",
+    "phone": "(281) 579-0066",
+    "logoMark": "",
+    "logoImageUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/452729649_2263955783940794_112354470657646598_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GDEb-Bq6_klIDgsIAAbgebjLKY8BbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=-lOMoGr4JGYQ7kNvwFjjU3I&_nc_oc=AdoXLyiZCuE7VQAh1wBfyDuUVFJzqYVkhwc_x8Z-E27NRcLWVQEQv-cGzRS5wZtrcRZI2y1iNZY4itsTEMAXGdSS&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7f60f&oh=00_AQSWcw-bxQ9FN3V-991RgYKwh6eln2r6dU6AQyoejewnFw&oe=6AF5FB92",
+    "logoLayout": "square",
+    "brandDisplay": "logo-and-name",
+    "logoReveal": "always",
+    "links": [],
+    "routeLinks": [],
+    "description": "Warm family pet grooming in Katy, Texas — nail trims first.",
+    "faviconUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/452729649_2263955783940794_112354470657646598_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GDEb-Bq6_klIDgsIAAbgebjLKY8BbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=-lOMoGr4JGYQ7kNvwFjjU3I&_nc_oc=AdoXLyiZCuE7VQAh1wBfyDuUVFJzqYVkhwc_x8Z-E27NRcLWVQEQv-cGzRS5wZtrcRZI2y1iNZY4itsTEMAXGdSS&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7f60f&oh=00_AQSWcw-bxQ9FN3V-991RgYKwh6eln2r6dU6AQyoejewnFw&oe=6AF5FB92",
+    "shareImageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/455326318_122182088120089091_7166253612874769225_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=CRVujknXiwUQ7kNvwE9NXKw&_nc_oc=Ado4MKXyyZ4icDn3NA2YW-6Z05Td3gZQBg_ck22r23HiFwCpgSz9g46DmMzeKEhvWplGYB9lLV6KYd2Qf2IfmkLg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQufOktBghZDjf48Wrlz0NFHPs0YGUxZnaD0Tk9L9D0vg&oe=6AF5E7FC"
+  },
+  "BrochureHero_1": {
+    "component": "BrochureHero",
+    "variant": "split",
+    "eyebrow": "Katy, Texas",
+    "headline": "Gentle nail trims for family dogs",
+    "subheadline": "Bubbles is a neighborhood salon on Fry Road — careful paws first, then a warm bath and tidy-up so everyone goes home comfortable. Call or text to book. Se habla español.",
+    "ctaLabel": "See our grooms",
+    "sectionSize": "full",
+    "slideshowIntervalMs": 5000,
+    "slideshowImages": [
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/455326318_122182088120089091_7166253612874769225_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=CRVujknXiwUQ7kNvwE9NXKw&_nc_oc=Ado4MKXyyZ4icDn3NA2YW-6Z05Td3gZQBg_ck22r23HiFwCpgSz9g46DmMzeKEhvWplGYB9lLV6KYd2Qf2IfmkLg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQufOktBghZDjf48Wrlz0NFHPs0YGUxZnaD0Tk9L9D0vg&oe=6AF5E7FC",
+        "alt": "Freshly groomed terrier ready for pickup"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/468534355_122204975612089091_5184321922389335300_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XCLbwifDQIkQ7kNvwHcOSMD&_nc_oc=AdoLIjuUiNBhmzgUk2RpHf7Fh9qnqi17LcRKmDDJBGry6tWUTkOGfuiaOHgiUiMjvhDZj04iPTB2g8_3QmYM9Yy7&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQR69PNywLQVCD0zwYvxFTPdRWQGRDfjmB9JW-YYir_CVg&oe=6AF5D69E",
+        "alt": "Three happy pups after a family grooming visit"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/475171569_122217564452089091_6905034136298616357_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Nkvst9O3WVYQ7kNvwFC7eaA&_nc_oc=AdouCq6yfbBVSGmZQH69nfRxlz4JbhFowpeogIjpWcIcAIipkexLcMr-2Qf9JJEcSFuvdNiAMFCnCZAX_9ho5-Sr&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQRWeTSm68XPdI3QunA_nQ7mXibmmJSfg0fkKebHp_P_gA&oe=6AF5E177",
+        "alt": "Small dogs with tidy coats and trimmed paws"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/477566980_122217568970089091_602866963764287082_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=feguvg24NSAQ7kNvwEtNddJ&_nc_oc=Ado1kI0JsjRfDkWDSbMStKgbVbzShamUBD_gzIn-hgNMQvqD_UovGK3PFeYmLH3zs1keoDCb1uk7f_wIgOMsgqh9&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQSWebCgq8AFxLjwCnQ8IYcOCHSMN6-li-JmQP3WTF6j1w&oe=6AF5F9EC",
+        "alt": "Neighborhood dogs from Bubbles Dog Grooming"
+      }
+    ]
+  },
+  "BrochureBanner_1": {
+    "component": "BrochureBanner",
+    "variant": "dock",
+    "sectionSize": "auto",
+    "line": "Nail trims, baths, and a gentle hand — Katy families welcome",
+    "cues": [
+      {
+        "targetId": "BrochureGallery_1",
+        "line": "Paw-fect nails and tidy coats, without the spa fuss"
+      },
+      {
+        "targetId": "BrochureAbout_1",
+        "line": "A warm family salon on Fry Road"
+      },
+      {
+        "targetId": "BrochureGallery_2",
+        "line": "The pups who come back smiling"
+      },
+      {
+        "targetId": "BrochureProcess_1",
+        "line": "Call or text — we will find you a time"
+      },
+      {
+        "targetId": "BrochureContact_1",
+        "line": "281-579-0066 · Se habla español"
+      }
+    ]
+  },
+  "BrochureGallery_1": {
+    "component": "BrochureGallery",
+    "title": "Nail care comes first",
+    "description": "Tidy paws, warm baths, and a gentle family tidy-up — the visits Katy neighbors book us for.",
+    "variant": "showcase",
+    "browseAxis": "vertical",
+    "tabLayout": "grid",
+    "dimInactiveTabs": true,
+    "sectionSize": "auto",
+    "categories": [
+      {
+        "title": "Nail trims",
+        "description": "Short, comfortable nails with a calm hand — the visit most families book us for."
+      },
+      {
+        "title": "Baths",
+        "description": "Warm water, a fluff-dry, and a pup who is ready to go home."
+      },
+      {
+        "title": "Full grooms",
+        "description": "Face, feet, and a tidy coat so family dogs still look like themselves."
+      }
+    ],
+    "items": [
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/455326318_122182088120089091_7166253612874769225_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=CRVujknXiwUQ7kNvwE9NXKw&_nc_oc=Ado4MKXyyZ4icDn3NA2YW-6Z05Td3gZQBg_ck22r23HiFwCpgSz9g46DmMzeKEhvWplGYB9lLV6KYd2Qf2IfmkLg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQufOktBghZDjf48Wrlz0NFHPs0YGUxZnaD0Tk9L9D0vg&oe=6AF5E7FC",
+        "title": "Tidy paws",
+        "category": "Nail trims",
+        "alt": "Small terrier with a fresh trim and neat feet"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476796159_122216879732089091_4620769990029076476_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=e-lLMwJB_M4Q7kNvwEqbM3m&_nc_oc=AdpDFtJdWB0cQtMY5ERNARy5tWMJvFL1ydcLOQsrvlD2hGQOBMY0JXJ5IpuFGM-_qj08qKv3NfRiu4eiyiTqQJ9w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQRs966ZGslKYOai9BRYD0G9yIbXKDrRkj46QhtGSUmMKg&oe=6AF5ED61",
+        "title": "Little polish",
+        "category": "Nail trims",
+        "alt": "Yorkie ready for a grooming visit"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476631375_122217055298089091_8117074753894614997_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=SkqaN8PK4jgQ7kNvwGGVDgF&_nc_oc=Adr33o0x1lUHggX1573T_dvvpLMDXLhu1ksscxfBawpySN42Suk_88AC2Dpzz8yy2AGFI01F53UqPrYyDgN9y010&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQOeEsz6NN-lKpjG-6HSpiwji1_kQup5RWdxWjEFvxDCQ&oe=6AF5D1A8",
+        "title": "Paw-fect trio",
+        "category": "Nail trims",
+        "alt": "Three freshly groomed dogs with trimmed paws"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476459661_122216902178089091_5761769553305533419_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=StE-azW0BAoQ7kNvwEW4B8p&_nc_oc=AdrCmOy-44TFXs-QhnCotqUq5TDEaEd7vLarI30-FnV0xwfg4BaXCpiV6WTXw2I_YZUK5tES-5xY3WUfyd8obVE1&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQR2j5ltdPWf_GcEhk2h3B8PnH1b9M09BYQMmixdLS46NA&oe=6AF5E9A5",
+        "title": "Bath time",
+        "category": "Baths",
+        "alt": "Muddy pup dreaming of a warm bath"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/468534355_122204975612089091_5184321922389335300_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XCLbwifDQIkQ7kNvwHcOSMD&_nc_oc=AdoLIjuUiNBhmzgUk2RpHf7Fh9qnqi17LcRKmDDJBGry6tWUTkOGfuiaOHgiUiMjvhDZj04iPTB2g8_3QmYM9Yy7&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQR69PNywLQVCD0zwYvxFTPdRWQGRDfjmB9JW-YYir_CVg&oe=6AF5D69E",
+        "title": "Family tidy-up",
+        "category": "Full grooms",
+        "alt": "Three polaroid portraits of freshly groomed dogs"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/475171569_122217564452089091_6905034136298616357_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Nkvst9O3WVYQ7kNvwFC7eaA&_nc_oc=AdouCq6yfbBVSGmZQH69nfRxlz4JbhFowpeogIjpWcIcAIipkexLcMr-2Qf9JJEcSFuvdNiAMFCnCZAX_9ho5-Sr&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQRWeTSm68XPdI3QunA_nQ7mXibmmJSfg0fkKebHp_P_gA&oe=6AF5E177",
+        "title": "Neighborhood grooms",
+        "category": "Full grooms",
+        "alt": "Four small dogs after a grooming visit"
+      }
+    ]
+  },
+  "BrochureAbout_1": {
+    "component": "BrochureAbout",
+    "variant": "story",
+    "eyebrow": "The salon",
+    "title": "A family shop, not a luxury spa",
+    "paragraphs": [
+      "Bubbles Dog Grooming is a neighborhood salon at 3616 N. Fry Road, Suite 260 in Katy. We take our time with every paw — nail trims are the heart of the visit, then a bath and a gentle tidy so your dog still looks like your dog.",
+      "Call or text (281) 579-0066 for an appointment. We hope to see your furry friend soon. Se habla español."
+    ],
+    "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/455326318_122182088120089091_7166253612874769225_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=CRVujknXiwUQ7kNvwE9NXKw&_nc_oc=Ado4MKXyyZ4icDn3NA2YW-6Z05Td3gZQBg_ck22r23HiFwCpgSz9g46DmMzeKEhvWplGYB9lLV6KYd2Qf2IfmkLg&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQufOktBghZDjf48Wrlz0NFHPs0YGUxZnaD0Tk9L9D0vg&oe=6AF5E7FC",
+    "imageAlt": "A freshly groomed family dog at Bubbles",
+    "imageSide": "right",
+    "services": [
+      {
+        "title": "Nail trims",
+        "description": "Careful, no-rush paw care so nails stay short and comfortable between visits."
+      },
+      {
+        "title": "Baths",
+        "description": "Warm water, a calm hand, and a fluff-dry before you pick up."
+      },
+      {
+        "title": "Tidy grooms",
+        "description": "Face, feet, and sanitary trims that keep family dogs looking like themselves."
+      }
+    ],
+    "team": [],
+    "testimonials": [],
+    "teamSectionLabel": "Our team",
+    "rows": [],
+    "ctaLabel": "Book a visit",
+    "ctaHref": "#BrochureContact_1",
+    "sectionSize": "auto"
+  },
+  "BrochureDivider_1": {
+    "component": "BrochureDivider",
+    "variant": "stats",
+    "eyebrow": "The neighborhood details",
+    "sectionSize": "auto",
+    "items": [
+      {
+        "label": "Katy, Texas",
+        "value": "Fry Rd"
+      },
+      {
+        "label": "Most days",
+        "value": "8:30–5"
+      },
+      {
+        "label": "281-579-0066",
+        "value": "Call / text"
+      },
+      {
+        "label": "Bienvenidos",
+        "value": "Español"
+      }
+    ]
+  },
+  "BrochureGallery_2": {
+    "component": "BrochureGallery",
+    "title": "The pups who visit",
+    "description": "A warm family salon — the same faces come back for nails, baths, and a little extra fluff.",
+    "variant": "cards",
+    "browseAxis": "horizontal",
+    "tabLayout": "grid",
+    "dimInactiveTabs": true,
+    "sectionSize": "auto",
+    "categories": [],
+    "items": [
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/477566980_122217568970089091_602866963764287082_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=feguvg24NSAQ7kNvwEtNddJ&_nc_oc=Ado1kI0JsjRfDkWDSbMStKgbVbzShamUBD_gzIn-hgNMQvqD_UovGK3PFeYmLH3zs1keoDCb1uk7f_wIgOMsgqh9&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQSWebCgq8AFxLjwCnQ8IYcOCHSMN6-li-JmQP3WTF6j1w&oe=6AF5F9EC",
+        "title": "Thankful faces",
+        "category": "Family grooms",
+        "alt": "A ring of neighborhood dogs from Bubbles Dog Grooming"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/468534355_122204975612089091_5184321922389335300_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=XCLbwifDQIkQ7kNvwHcOSMD&_nc_oc=AdoLIjuUiNBhmzgUk2RpHf7Fh9qnqi17LcRKmDDJBGry6tWUTkOGfuiaOHgiUiMjvhDZj04iPTB2g8_3QmYM9Yy7&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQR69PNywLQVCD0zwYvxFTPdRWQGRDfjmB9JW-YYir_CVg&oe=6AF5D69E",
+        "title": "After the visit",
+        "category": "Happy pups",
+        "alt": "Three smiling dogs after grooming"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/475171569_122217564452089091_6905034136298616357_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=Nkvst9O3WVYQ7kNvwFC7eaA&_nc_oc=AdouCq6yfbBVSGmZQH69nfRxlz4JbhFowpeogIjpWcIcAIipkexLcMr-2Qf9JJEcSFuvdNiAMFCnCZAX_9ho5-Sr&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQRWeTSm68XPdI3QunA_nQ7mXibmmJSfg0fkKebHp_P_gA&oe=6AF5E177",
+        "title": "Small and tidy",
+        "category": "Happy pups",
+        "alt": "Four small dogs with fresh trims"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476631375_122217055298089091_8117074753894614997_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=SkqaN8PK4jgQ7kNvwGGVDgF&_nc_oc=Adr33o0x1lUHggX1573T_dvvpLMDXLhu1ksscxfBawpySN42Suk_88AC2Dpzz8yy2AGFI01F53UqPrYyDgN9y010&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQQOeEsz6NN-lKpjG-6HSpiwji1_kQup5RWdxWjEFvxDCQ&oe=6AF5D1A8",
+        "title": "Friday friends",
+        "category": "Family grooms",
+        "alt": "Three groomed dogs posing together"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476796159_122216879732089091_4620769990029076476_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=e-lLMwJB_M4Q7kNvwEqbM3m&_nc_oc=AdpDFtJdWB0cQtMY5ERNARy5tWMJvFL1ydcLOQsrvlD2hGQOBMY0JXJ5IpuFGM-_qj08qKv3NfRiu4eiyiTqQJ9w&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQRs966ZGslKYOai9BRYD0G9yIbXKDrRkj46QhtGSUmMKg&oe=6AF5ED61",
+        "title": "Reminder day",
+        "category": "Happy pups",
+        "alt": "Yorkie on a friendly grooming reminder"
+      },
+      {
+        "imageUrl": "https://scontent.cdninstagram.com/v/t39.30808-6/476459661_122216902178089091_5761769553305533419_n.jpg?stp=dst-jpg_e35_s640x640_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=StE-azW0BAoQ7kNvwEW4B8p&_nc_oc=AdrCmOy-44TFXs-QhnCotqUq5TDEaEd7vLarI30-FnV0xwfg4BaXCpiV6WTXw2I_YZUK5tES-5xY3WUfyd8obVE1&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=JblTJz-6PzI32kwyq6K3ZA&_nc_ss=7f60f&oh=00_AQR2j5ltdPWf_GcEhk2h3B8PnH1b9M09BYQMmixdLS46NA&oe=6AF5E9A5",
+        "title": "Ready for a soak",
+        "category": "Baths",
+        "alt": "A muddy dog waiting for bath time"
+      }
+    ]
+  },
+  "BrochureProcess_1": {
+    "component": "BrochureProcess",
+    "variant": "steps",
+    "eyebrow": "A simple visit",
+    "title": "Call, drop off, pick up a comfortable pup",
+    "intro": "No online spa portal — text or call and we will find a time that works for your family.",
+    "ctaLabel": "Call or text us",
+    "sectionSize": "auto",
+    "steps": [
+      {
+        "title": "Call or text",
+        "body": "Reach us at (281) 579-0066. Tell us if it is nails only, a bath, or a full tidy-up. Se habla español."
+      },
+      {
+        "title": "Drop off on Fry Road",
+        "body": "3616 N. Fry Road, Suite 260, Katy. Regular hours are 8:30am–5:00pm."
+      },
+      {
+        "title": "Nails, then the rest",
+        "body": "We start with a careful nail trim, then a warm bath and a gentle groom so your dog stays comfortable."
+      },
+      {
+        "title": "Pick up fluffy",
+        "body": "We will let you know when your pup is ready — tidy paws, fresh coat, ready for home."
+      }
+    ]
+  },
+  "BrochureContact_1": {
+    "component": "BrochureContact",
+    "variant": "split",
+    "eyebrow": "Book a time",
+    "title": "Call or text for an appointment",
+    "intro": "We hope to see your furry friend soon. Leave a note if you like — we usually book by phone.",
+    "ctaLabel": "Send a note",
+    "phone": "(281) 579-0066",
+    "serviceArea": "3616 N. Fry Rd, Ste 260, Katy, TX 77449",
+    "hours": "8:30am–5:00pm",
+    "email": "",
+    "whatsapp": "",
+    "links": [],
+    "videoSrc": "",
+    "logoImageUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/452729649_2263955783940794_112354470657646598_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GDEb-Bq6_klIDgsIAAbgebjLKY8BbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=-lOMoGr4JGYQ7kNvwFjjU3I&_nc_oc=AdoXLyiZCuE7VQAh1wBfyDuUVFJzqYVkhwc_x8Z-E27NRcLWVQEQv-cGzRS5wZtrcRZI2y1iNZY4itsTEMAXGdSS&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7f60f&oh=00_AQSWcw-bxQ9FN3V-991RgYKwh6eln2r6dU6AQyoejewnFw&oe=6AF5FB92",
+    "bg": "#f4f0e8",
+    "theme": "light",
+    "mailtoSubject": "",
+    "sectionSize": "auto"
+  },
+  "BrochureFooter_1": {
+    "component": "BrochureFooter",
+    "variant": "stacked",
+    "businessName": "Bubbles Dog Grooming",
+    "logoImageUrl": "https://scontent.cdninstagram.com/v/t51.2885-19/452729649_2263955783940794_112354470657646598_n.jpg?stp=dst-jpg_s150x150_tt6&_nc_cat=101&ig_cache_key=GDEb-Bq6_klIDgsIAAbgebjLKY8BbkULAAAB1501500j-ccb7-5&ccb=7-5&_nc_sid=669407&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=-lOMoGr4JGYQ7kNvwFjjU3I&_nc_oc=AdoXLyiZCuE7VQAh1wBfyDuUVFJzqYVkhwc_x8Z-E27NRcLWVQEQv-cGzRS5wZtrcRZI2y1iNZY4itsTEMAXGdSS&_nc_zt=24&_nc_ht=scontent.cdninstagram.com&_nc_ss=7f60f&oh=00_AQSWcw-bxQ9FN3V-991RgYKwh6eln2r6dU6AQyoejewnFw&oe=6AF5FB92",
+    "tagline": "Gentle nail trims and warm baths for Katy families. Se habla español.",
+    "phone": "(281) 579-0066",
+    "serviceArea": "3616 N. Fry Rd, Ste 260, Katy, TX 77449",
+    "hours": "8:30am–5:00pm",
+    "colophon": "",
+    "links": [],
+    "sectionSize": "auto"
+  }
+}

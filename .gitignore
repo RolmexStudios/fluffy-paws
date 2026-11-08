@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+.wrangler/
+
+# demo scrape artifacts (thumbs + catalog)
+.demo/
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts

@@ -1,0 +1,144 @@
+.root {
+  background: #1c1916;
+  color: #faf8f5;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(8rem, 0.7fr) minmax(12rem, 1fr);
+  gap: 2.5rem 3rem;
+  align-items: start;
+  margin: 0 auto;
+  max-width: 76rem;
+  padding: 3.25rem 1.5rem 2.5rem;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 26rem;
+}
+
+.brand {
+  font-family: var(--font-serif), serif;
+  font-size: clamp(1.7rem, 3vw, 2.15rem);
+  letter-spacing: -0.03em;
+}
+
+.tagline {
+  margin-top: 0.7rem;
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: rgba(250, 248, 245, 0.68);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  margin-top: 1.4rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
+  background: #c45c3e;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 650;
+  text-decoration: none;
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background 0.25s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: #b24f33;
+      transform: translateY(-1px);
+    }
+  }
+
+  &:focus-visible {
+    outline: 2px solid #faf8f5;
+    outline-offset: 3px;
+  }
+}
+
+.colLabel {
+  margin-bottom: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(250, 248, 245, 0.45);
+}
+
+.nav,
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.nav a,
+.metaLink {
+  width: fit-content;
+  color: rgba(250, 248, 245, 0.82);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.25s ease;
+
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.metaText,
+.metaMuted {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: rgba(250, 248, 245, 0.82);
+}
+
+.metaMuted {
+  color: rgba(250, 248, 245, 0.55);
+}
+
+.copy {
+  margin: 0;
+  padding: 1.1rem 1.5rem 1.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 767px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.25rem 1rem 2rem;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .copy {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cta,
+  .nav a,
+  .metaLink {
+    transition: none;
+  }
+
+  .cta:hover {
+    transform: none;
+  }
+}

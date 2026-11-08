@@ -1,0 +1,136 @@
+.spacer {
+  height: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+  flex-shrink: 0;
+}
+
+.bar {
+  position: fixed;
+  z-index: 36;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-height: 4.75rem;
+  padding: 0.65rem 1.25rem calc(0.65rem + env(safe-area-inset-bottom, 0px));
+  background: rgba(246, 242, 236, 0.94);
+  color: #1c1916;
+  border-top: 1px solid rgba(28, 25, 22, 0.14);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.audio {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.transport {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.play,
+.skip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  padding: 0;
+  color: #1c1916;
+  background: transparent;
+  border: 1px solid rgba(28, 25, 22, 0.18);
+  cursor: pointer;
+  transition: background 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &:hover {
+    background: rgba(28, 25, 22, 0.06);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #1c1916;
+    outline-offset: 2px;
+  }
+}
+
+.play {
+  background: #1c1916;
+  color: #f6f2ec;
+  border-color: #1c1916;
+
+  &:hover {
+    background: #2a2622;
+  }
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.meta {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.label {
+  margin: 0;
+  font-family: var(--font-editorial-sans), system-ui, sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a7f73;
+}
+
+.track {
+  margin: 0.15rem 0 0;
+  overflow: hidden;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.title {
+  font-family: var(--font-editorial-serif), sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.artist {
+  color: #5c5348;
+
+  &::before {
+    content: " — ";
+  }
+}
+
+@media (max-width: 767px) {
+  .bar {
+    gap: 0.55rem;
+    padding-right: 0.85rem;
+    padding-left: 0.85rem;
+  }
+
+  .label {
+    letter-spacing: 0.14em;
+  }
+
+  .track {
+    font-size: 0.88rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .play,
+  .skip {
+    transition: none;
+  }
+}
