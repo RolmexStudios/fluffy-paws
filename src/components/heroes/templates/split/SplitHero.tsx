@@ -46,7 +46,6 @@ export function SplitHero({
 
       <div className={styles.mediaColumn}>
         <div className={styles.mediaPanel}>
-          <span className={styles.mediaFrame} aria-hidden />
           <Slideshow
             slides={hero.slideshowImages.map((slide, index) => ({
               imageUrl: slide.imageUrl,
