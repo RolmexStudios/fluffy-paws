@@ -22,7 +22,7 @@
 
 .root {
   display: grid !important;
-  grid-template-columns: minmax(18rem, 0.86fr) minmax(0, 1.14fr);
+  grid-template-columns: 1fr 1fr;
   align-items: stretch;
   min-height: 100%;
   background:
@@ -117,15 +117,24 @@
 }
 
 .mediaColumn {
-  position: relative;
-  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem 3rem 4.5rem 1rem;
 }
 
 .mediaPanel {
-  position: absolute;
-  inset: 0;
+  position: relative;
+  width: 100%;
+  max-width: 28rem;
+  aspect-ratio: 4 / 5;
+  max-height: min(58vh, 480px);
   overflow: hidden;
+  border-radius: 1.25rem;
   background: #e8e2d9;
+  box-shadow:
+    0 1px 2px rgba(28, 25, 22, 0.06),
+    0 18px 48px rgba(28, 25, 22, 0.12);
   animation: heroMediaReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
 }
 
@@ -163,12 +172,18 @@
 @media (max-width: 767px) {
   .root {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(52dvh, 58vw) auto;
   }
 
   .mediaColumn {
     order: -1;
-    min-height: 52dvh;
+    padding: 1.25rem 1.25rem 0;
+  }
+
+  .mediaPanel {
+    max-width: 18rem;
+    max-height: min(42vh, 320px);
+    aspect-ratio: 5 / 4;
+    margin: 0 auto;
   }
 
   .copy {
